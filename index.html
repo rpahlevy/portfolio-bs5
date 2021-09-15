@@ -29,7 +29,7 @@
         </header>
 
         <nav class="bg-primary py-3 sticky-top">
-            <ul class="d-flex justify-content-center list-unstyled mb-0">
+            <ul class="d-flex align-items-center list-unstyled mb-0">
                 <li class="mx-3">
                     <a class="text-white text-decoration-none py-3" href="#profile"
                         onclick="scrollToElement('profile', 1000)">Profile</a>
@@ -41,6 +41,16 @@
                 <li class="mx-3">
                     <a class="text-white text-decoration-none py-3" href="#skill"
                         onclick="scrollToElement('skill', 1000)">Skill</a>
+                </li>
+                <li class="mx-3">
+                    <a class="text-white text-decoration-none py-3" href="#contact"
+                        onclick="scrollToElement('contact', 1000)">Contact</a>
+                </li>
+                <li class="ms-auto me-3">
+                    <div class="input-group">
+                        <input class="form-control" type="search" name="search" id="search">
+                        <button class="btn btn-success" type="button" onclick="searchNow()">Search</button>
+                    </div>
                 </li>
             </ul>
         </nav>
@@ -209,6 +219,102 @@
         </div>
         <!-- skill -->
 
+        <!-- contact -->
+        <div class="bg-info bg-opacity-80">
+            <div id="contact" class="container py-5">
+                <h1 class="text-center mb-4">Contact</h1>
+
+                <form action="" method="GET">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nama</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Masukkan Nama ANda di sini" value="default name" disabled required>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="email" name="email" placeholder="Masukkan Email ANda di sini (wajib GMAIL)" required>
+                                    <span class="input-group-text">
+                                        @gmail.com
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="mb-3">
+                                <label for="age" class="form-label">Usia</label>
+                                <input type="number" name="age" id="age" class="form-control" placeholder="Masukkan usia Anda">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="mb-3">
+                                <label for="province" class="form-label">Provinsi</label>
+                                <select class="form-select" name="province" id="province" required>
+                                    <option hidden value="" selected>-- Silahahkan pilih provinsi --</option>
+                                    <option value="1">Jawa Barat</option>
+                                    <option value="2">Jawa Tengah</option>
+                                    <option value="3">Jawa Timur</option>
+                                    <option value="4">Yogyakarta</option>
+                                    <option value="5">Bali</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Alamat</label>
+                        <textarea class="form-control" name="address" id="address" rows="3" placeholder="Masukkan Alamat Anda di sini" required></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="attachment" class="form-label">Attachment</label>
+                        <input class="form-control" type="file" id="attachment" accept=".pdf" multiple>
+                    </div>
+
+                    <label for="" class="form-label">How is your feeling?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="feelings" id="feeling1">
+                        <label class="form-check-label" for="feeling1">
+                            Happy
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="feelings" id="feeling2" checked>
+                        <label class="form-check-label" for="feeling2">
+                            Sad
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="feelings" id="feeling3">
+                        <label class="form-check-label" for="feeling3">
+                            Angry
+                        </label>
+                    </div>
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="radio" name="feelings" id="feeling4">
+                        <label class="form-check-label" for="feeling4">
+                            Neutral
+                        </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="subscribe" checked>
+                        <label class="form-check-label" for="subscribe">
+                            Subscribe to my update
+                        </label>
+                    </div>
+
+                    <button class="btn btn-secondary" type="reset">Reset Form</button>
+                    <button class="btn btn-primary" type="submit">Send Email</button>
+                </form>
+            </div>
+        </div>
+        <!-- contact -->
+
         <footer class="text-center bg-secondary text-white py-2">
             &copy; 2021. Rio Pahlevy.
         </footer>
@@ -333,6 +439,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+        function searchNow() {
+            var query = $('#search').val()
+            alert('Query kamu adalah: '+ query)
+        }
+    </script>
 </body>
 
 </html>
