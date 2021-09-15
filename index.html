@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,9 @@
     <title>Portfolio</title>
 
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
     <style>
         .badge-top-right {
@@ -16,6 +19,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <div class="wrapper">
@@ -27,13 +31,16 @@
         <nav class="bg-primary py-3 sticky-top">
             <ul class="d-flex justify-content-center list-unstyled mb-0">
                 <li class="mx-3">
-                    <a class="text-white text-decoration-none py-3" href="#profile" onclick="scrollToElement('profile', 1000)">Profile</a>
+                    <a class="text-white text-decoration-none py-3" href="#profile"
+                        onclick="scrollToElement('profile', 1000)">Profile</a>
                 </li>
                 <li class="mx-3">
-                    <a class="text-white text-decoration-none py-3" href="#portfolio" onclick="scrollToElement('portfolio', 1000)">Portfolio</a>
+                    <a class="text-white text-decoration-none py-3" href="#portfolio"
+                        onclick="scrollToElement('portfolio', 1000)">Portfolio</a>
                 </li>
                 <li class="mx-3">
-                    <a class="text-white text-decoration-none py-3" href="#skill" onclick="scrollToElement('skill', 1000)">Skill</a>
+                    <a class="text-white text-decoration-none py-3" href="#skill"
+                        onclick="scrollToElement('skill', 1000)">Skill</a>
                 </li>
             </ul>
         </nav>
@@ -45,16 +52,19 @@
 
             <!-- about -->
             <section class="mb-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae possimus porro quo distinctio culpa reprehenderit inventore quidem odio amet rerum? Aliquam aliquid ad, libero dolorem blanditiis quo vitae nam rem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae possimus porro quo distinctio culpa
+                reprehenderit inventore quidem odio amet rerum? Aliquam aliquid ad, libero dolorem blanditiis quo vitae
+                nam rem.
             </section>
             <!-- about -->
 
             <!-- address -->
             <address class="fst-italic">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, vero cumque! Corrupti laudantium enim animi quos, ad quo numquam.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, vero cumque! Corrupti laudantium enim
+                animi quos, ad quo numquam.
             </address>
             <!-- address -->
-            
+
             <!-- contact -->
             <section>
                 <ul>
@@ -79,70 +89,78 @@
         <div class="bg-dark bg-opacity-10">
             <div id="portfolio" class="container py-5">
                 <h1 class="text-center mb-4">Portfolio</h1>
-    
+
                 <!-- portfolio using float -->
-                <div id="">
-    
+                <!-- <div id="">
+
                     <div class="float-start w-25" onclick="show_modal('modal-website-koperasi')">
                         <div class="mx-5 mb-4 position-relative">
-                            <span class="position-absolute badge-top-right bg-success text-white rounded-pill px-2">BEST</span>
+                            <span
+                                class="position-absolute badge-top-right bg-success text-white rounded-pill px-2">BEST</span>
                             <img class="w-100" src="https://via.placeholder.com/600" alt="Portfolio Website Koperasi">
                         </div>
                         <h3 class="text-center fs-6">Website Koperasi</h3>
                     </div>
-    
+
                     <div class="float-start w-25" onclick="show_modal('modal-website-ppdb')">
                         <div class="mx-5 mb-4 w-auto position-relative d-inline-block">
-                            <span class="position-absolute badge-top-right bg-success text-white rounded-pill px-2">BEST</span>
+                            <span
+                                class="position-absolute badge-top-right bg-success text-white rounded-pill px-2">BEST</span>
                             <img class="w-100" src="https://via.placeholder.com/600" alt="Portfolio Website PPDB">
                         </div>
                         <h3 class="text-center fs-6">Website PPDB</h3>
                     </div>
-    
+
                     <div class="float-start w-25" onclick="show_modal('modal-absensi-online')">
                         <div class="mx-5 mb-4 position-relative">
-                            <img class="w-100" src="https://via.placeholder.com/600" alt="Portfolio Aplikasi Absensi Online">
+                            <img class="w-100" src="https://via.placeholder.com/600"
+                                alt="Portfolio Aplikasi Absensi Online">
                         </div>
                         <h3 class="text-center fs-6">Aplikasi Absensi Online</h3>
                     </div>
-    
+
                     <div class="float-start w-25" onclick="show_modal('modal-resep-nusantara')">
                         <div class="mx-5 mb-4 position-relative">
-                            <img class="w-100" src="https://via.placeholder.com/600" alt="Portfolio Aplikasi Resep Nusantara">
+                            <img class="w-100" src="https://via.placeholder.com/600"
+                                alt="Portfolio Aplikasi Resep Nusantara">
                         </div>
                         <h3 class="text-center fs-6">Aplikasi Resep Nusantara</h3>
                     </div>
-    
+
                 </div>
-                <div class="clearfix"></div>
+                <div class="clearfix"></div> -->
                 <!-- portfolio using float -->
 
 
                 <!-- portfolio using grid (row & col) -->
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-12 col-md-6 col-lg-3 mb-4" data-bs-toggle="modal" data-bs-target="#portfolio-modal-1">
                         <div class="mx-5 mb-4 position-relative">
-                            <span class="position-absolute badge-top-right bg-success text-white rounded-pill px-2">BEST</span>
+                            <span
+                                class="position-absolute badge-top-right bg-success text-white rounded-pill px-2">BEST</span>
                             <img class="w-100" src="https://via.placeholder.com/600" alt="Portfolio Website Koperasi">
                         </div>
                         <h3 class="text-center fs-6">Website Koperasi</h3>
                     </div>
-                    <div class="col-3">
-                        <div class="mx-5 mb-4 w-auto position-relative d-inline-block">
-                            <span class="position-absolute badge-top-right bg-success text-white rounded-pill px-2">BEST</span>
+                    <div class="col-12 col-md-6 col-lg-3 mb-4" data-bs-toggle="modal" data-bs-target="#portfolio-modal-2">
+                        <div class="mx-5 mb-4 position-relative">
+                            <span
+                                class="position-absolute badge-top-right bg-success text-white rounded-pill px-2">BEST</span>
                             <img class="w-100" src="https://via.placeholder.com/600" alt="Portfolio Website PPDB">
                         </div>
                         <h3 class="text-center fs-6">Website PPDB</h3>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-md-6 col-lg-3 mb-4" data-bs-toggle="modal" data-bs-target="#portfolio-modal-3">
                         <div class="mx-5 mb-4 position-relative">
-                            <img class="w-100" src="https://via.placeholder.com/600" alt="Portfolio Aplikasi Absensi Online">
+                            <img class="w-100" src="https://via.placeholder.com/600"
+                                alt="Portfolio Aplikasi Absensi Online">
                         </div>
                         <h3 class="text-center fs-6">Aplikasi Absensi Online</h3>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-md-6 col-lg-3 mb-4" data-bs-toggle="modal" data-bs-target="#portfolio-modal-4">
                         <div class="mx-5 mb-4 position-relative">
-                            <img class="w-100" src="https://via.placeholder.com/600" alt="Portfolio Aplikasi Resep Nusantara">
+                            <img class="w-100" src="https://via.placeholder.com/600"
+                                alt="Portfolio Aplikasi Resep Nusantara">
                         </div>
                         <h3 class="text-center fs-6">Aplikasi Resep Nusantara</h3>
                     </div>
@@ -152,7 +170,7 @@
             </div>
         </div>
         <!-- portfolio -->
-        
+
         <!-- skill -->
         <div id="skill" class="container py-5">
             <h1 class="text-center mb-4">Skill</h1>
@@ -162,7 +180,9 @@
                 <dd class="ps-5">
                     <h5 class="m-0 fs-6">4 tahun</h5>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum dignissimos alias, non facilis odit saepe porro maxime nisi cum fugit ducimus. Ea debitis quae quos culpa, asperiores vitae earum architecto.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum dignissimos alias, non facilis
+                        odit saepe porro maxime nisi cum fugit ducimus. Ea debitis quae quos culpa, asperiores vitae
+                        earum architecto.
                     </p>
                 </dd>
 
@@ -170,7 +190,9 @@
                 <dd class="ps-5">
                     <h5 class="m-0 fs-6">2 tahun</h5>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique perspiciatis est labore voluptatem accusamus! Ipsam, repudiandae dolor itaque quas debitis totam sapiente in at tempore quae tenetur doloremque id provident?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique perspiciatis est labore
+                        voluptatem accusamus! Ipsam, repudiandae dolor itaque quas debitis totam sapiente in at tempore
+                        quae tenetur doloremque id provident?
                     </p>
                 </dd>
 
@@ -178,7 +200,9 @@
                 <dd class="ps-5">
                     <h5 class="m-0 fs-6">5 tahun</h5>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum nobis, provident quisquam perferendis neque voluptas ratione at repellat. Accusantium esse quam suscipit harum laborum placeat earum repellendus dolore quasi illum?
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum nobis, provident quisquam
+                        perferendis neque voluptas ratione at repellat. Accusantium esse quam suscipit harum laborum
+                        placeat earum repellendus dolore quasi illum?
                     </p>
                 </dd>
             </dl>
@@ -189,9 +213,126 @@
             &copy; 2021. Rio Pahlevy.
         </footer>
 
+        <!-- Modal -->
+        <div class="modal fade" id="portfolio-modal-1" tabindex="-1" aria-labelledby="portfolio-modal-label-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="portfolio-modal-label-1">Detail Portfolio</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="d-flex flex-column flex-md-row align-items-center">
+                            <div class="flex-shrink-0">
+                                <img class="portfolio-modal-image mb-4 mb-md-0" src="https://via.placeholder.com/600" alt="Portfolio Image">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5>Website Koperasi</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum architecto aliquid quaerat tempore, hic inventore quibusdam, voluptates iure cupiditate consequatur unde illo ipsum iste mollitia quo iusto. Dolorem, similique ducimus.
+                                </p>
+                                <hr>
+                                <a href="#">https://myportfolio.com/website-koperasi</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="portfolio-modal-2" tabindex="-1" aria-labelledby="portfolio-modal-label-2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="portfolio-modal-label-2">Detail Portfolio</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="d-flex flex-column flex-md-row align-items-center">
+                            <div class="flex-shrink-0">
+                                <img class="portfolio-modal-image mb-4 mb-md-0" src="https://via.placeholder.com/600" alt="Portfolio Image">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5>Website PPDB</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum architecto aliquid quaerat tempore, hic inventore quibusdam, voluptates iure cupiditate consequatur unde illo ipsum iste mollitia quo iusto. Dolorem, similique ducimus.
+                                </p>
+                                <hr>
+                                <a href="#">https://myportfolio.com/website-ppdb</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="portfolio-modal-3" tabindex="-1" aria-labelledby="portfolio-modal-label-3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="portfolio-modal-label-3">Detail Portfolio</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="d-flex flex-column flex-md-row align-items-center">
+                            <div class="flex-shrink-0">
+                                <img class="portfolio-modal-image mb-4 mb-md-0" src="https://via.placeholder.com/600" alt="Portfolio Image">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5>Aplikasi Absensi Online</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum architecto aliquid quaerat tempore, hic inventore quibusdam, voluptates iure cupiditate consequatur unde illo ipsum iste mollitia quo iusto. Dolorem, similique ducimus.
+                                </p>
+                                <hr>
+                                <a href="#">https://myportfolio.com/website-ppdb</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="portfolio-modal-4" tabindex="-1" aria-labelledby="portfolio-modal-label-4" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered custom-modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="portfolio-modal-label-4">Detail Portfolio</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="d-flex flex-column flex-md-row align-items-center">
+                            <div class="flex-shrink-0">
+                                <img class="portfolio-modal-image mb-4 mb-md-0" src="https://via.placeholder.com/600" alt="Portfolio Image">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5>Aplikasi Resep Nusantara</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum architecto aliquid quaerat tempore, hic inventore quibusdam, voluptates iure cupiditate consequatur unde illo ipsum iste mollitia quo iusto. Dolorem, similique ducimus.
+                                </p>
+                                <hr>
+                                <a href="#">https://myportfolio.com/website-ppdb</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+
     </div>
-    
+
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

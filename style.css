@@ -1,0 +1,14 @@
+.portfolio-modal-image {
+  width: 160px;
+}
+
+.custom-modal-dialog {
+  max-width: 600px;
+}
+
+@media (max-width: 480px) {
+  header img {
+      object-fit: cover;
+      height: 400px;
+  }
+}
