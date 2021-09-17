@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Plugins</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.11.2/b-2.0.0/b-colvis-2.0.0/b-html5-2.0.0/b-print-2.0.0/datatables.min.css"/>
+</head>
+
+<body>
+
+    <div class="container py-5">
+        <h1>DataTable Default</h1>
+        <table id="workers" class="table table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th><span style="font-weight:bold;font-style:normal">Name</span></th>
+                    <th><span style="font-weight:bold;font-style:normal">Position</span></th>
+                    <th><span style="font-weight:bold;font-style:normal">Office</span></th>
+                    <th><span style="font-weight:bold;font-style:normal">Age</span></th>
+                    <th><span style="font-weight:bold;font-style:normal">Start date</span></th>
+                    <th><span style="font-weight:bold;font-style:normal">Action</span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span style="background-color:#F1F1F1">Airi Satou</span></td>
+                    <td>Accountant</td>
+                    <td>Tokyo</td>
+                    <td>33</td>
+                    <td>2008/11/28</td>
+                    <td>
+                        <button class="btn btn-outline-primary">Detail</button>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span style="background-color:#FAFAFA">Angelica Ramos</span></td>
+                    <td>Chief Executive Officer (CEO)</td>
+                    <td>London</td>
+                    <td>47</td>
+                    <td>2009/10/09</td>
+                    <td>
+                        <button class="btn btn-outline-primary">Detail</button>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span style="background-color:#F1F1F1">Ashton Cox</span></td>
+                    <td>Junior Technical Author</td>
+                    <td>San Francisco</td>
+                    <td>66</td>
+                    <td>2009/01/12</td>
+                    <td>
+                        <button class="btn btn-outline-primary">Detail</button>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span style="background-color:#FAFAFA">Bradley Greer</span></td>
+                    <td>Software Engineer</td>
+                    <td>London</td>
+                    <td>41</td>
+                    <td>2012/10/13</td>
+                    <td>
+                        <button class="btn btn-outline-primary">Detail</button>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span style="background-color:#F1F1F1">Brenden Wagner</span></td>
+                    <td>Software Engineer</td>
+                    <td>San Francisco</td>
+                    <td>28</td>
+                    <td>2011/06/07</td>
+                    <td>
+                        <button class="btn btn-outline-primary">Detail</button>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span style="background-color:#FAFAFA">Brielle Williamson</span></td>
+                    <td>Integration Specialist</td>
+                    <td>New York</td>
+                    <td>61</td>
+                    <td>2012/12/02</td>
+                    <td>
+                        <button class="btn btn-outline-primary">Detail</button>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span style="background-color:#F1F1F1">Bruno Nash</span></td>
+                    <td>Software Engineer</td>
+                    <td>London</td>
+                    <td>38</td>
+                    <td>2011/05/03</td>
+                    <td>
+                        <button class="btn btn-outline-primary">Detail</button>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span style="background-color:#FAFAFA">Caesar Vance</span></td>
+                    <td>Pre-Sales Support</td>
+                    <td>New York</td>
+                    <td>21</td>
+                    <td>2011/12/12</td>
+                    <td>
+                        <button class="btn btn-outline-primary">Detail</button>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span style="background-color:#F1F1F1">Cara Stevens</span></td>
+                    <td>Sales Assistant</td>
+                    <td>New York</td>
+                    <td>46</td>
+                    <td>2011/12/06</td>
+                    <td>
+                        <button class="btn btn-outline-primary">Detail</button>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span style="background-color:#EAEAEA">Cedric Kelly</span></td>
+                    <td>Senior Javascript Developer</td>
+                    <td>Edinburgh</td>
+                    <td>22</td>
+                    <td>2012/03/29</td>
+                    <td>
+                        <button class="btn btn-outline-primary">Detail</button>
+                        <button class="btn btn-warning">Edit</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.11.2/b-2.0.0/b-colvis-2.0.0/b-html5-2.0.0/b-print-2.0.0/datatables.min.js"></script>
+
+    <script>
+        // $(document).ready(function() {})
+        $(function () {
+            // example object
+            // var obj = {
+            //     attr1: true,
+            //     attr2: false,
+            //     attr3: 'ok',
+            //     attr4: [],
+            //     attr5: {
+            //         a: 1,
+            //         b: 2
+            //     }
+            // };
+
+            $('#workers').DataTable({
+                lengthMenu: [5, 10, 25, 50],
+                pageLength: 10,
+                columns: [
+                    null,
+                    { searchable: false },
+                    { searchable: false, orderable: false },
+                    null,
+                    null,
+                    { orderable: false },
+                ],
+                dom: 'Bfrtip',
+                buttons: [
+                    'copy', 'csv', 'excel', 'pdf', 'print'
+                ],
+                // columnDefs: [
+                //     {
+                //         searchable: false,
+                //         targets: [1,2,3,4,5],
+                //     },
+                //     {
+                //         orderable: false,
+                //         targets: [2,5],
+                //     },
+                // ],
+            });
+        })
+    </script>
+</body>
+
+</html>
